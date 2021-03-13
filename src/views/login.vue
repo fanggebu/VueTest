@@ -52,6 +52,7 @@
         </el-form-item>
       </el-form>
     </el-card>
+  <button @click="dfs">dsfa</button>
   </div>
 </template>
  
@@ -69,6 +70,11 @@ export default {
     };
   },
   methods: {
+    dfs(){
+      
+      localStorage.setItem('token','741');
+      console.log(localStorage.getItem('token'));
+    },
     showPwd() {
       if (this.pwdType === "password") {
         this.pwdType = "";

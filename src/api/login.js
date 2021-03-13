@@ -7,6 +7,10 @@ export function login(username, password) { //登录接口
     data: { //提交的数据
       username,
       password
+    },
+    headers:{
+      'token':localStorage.getItem('token')
     }
-  })
+  
+  });
 }
